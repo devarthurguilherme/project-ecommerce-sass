@@ -18,6 +18,9 @@
         background-position-x: 120%
         height: 700px
 
+    @include base-mixins.tablet
+    background-position-y: 18rem
+
     &-content
         height: 100%
         display: flex
@@ -51,11 +54,20 @@
             margin: 0 1rem
 
             @include base-mixins.mobile
-                margin-bottom: 1.5rem
+            margin-bottom: 1.5rem
+
+            @include base-mixins.tablet
+            width: 90px
+            height: 90px
+            margin: 0 .5rem
 
             &-time
                 font-weight: bold
                 font-size: 1.4rem
+
+            @include base-mixins.tablet
+            .deal-container-timer-word
+                font-size: 1.2rem
 
         &-title, &-subtitle
             margin-bottom: 1rem
@@ -65,3 +77,4 @@
         &-subtitle
             margin-bottom: 2rem
             font-size: 1.5rem
+

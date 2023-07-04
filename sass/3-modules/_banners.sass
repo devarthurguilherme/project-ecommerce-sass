@@ -15,6 +15,10 @@
         width: 90%
         margin: 1rem
 
+    @include base-mixins.tablet
+        width: 45%
+        margin: .5rem
+
     &:hover
         background-size: 120%
 
@@ -31,10 +35,15 @@
         left: 0
         padding: 2.8rem
 
+        @include base-mixins.tablet
+        padding: .8rem
+
     h2
         font-size: 2.1rem
         margin-bottom: 1.4rem
         max-width: 70%
+        @include base-mixins.tablet
+        font-size: 1.6rem
 
     a
         font-size: 1.5rem
@@ -42,6 +51,8 @@
         font-weight: bold
         display: flex
         align-items: center
+        @include base-mixins.tablet
+        font-size: 1.2rem
 
     i
         color: variables.$light-color
