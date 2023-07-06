@@ -17,6 +17,23 @@
 <body>
     <!--Header-->
     <header class="header">
+        <div id="mobile">
+            <!-- The overlay -->
+            <div id="mobile-menu" class="mobile-menu-overlay">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+                <!-- Overlay content -->
+                <nav class="mobile-menu-overlay-content">
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </nav> 
+            </div>  
+            <!-- Use any element to open/show the overlay navigation menu -->
+            <i id="mobile-toggle"class="fa-solid fa-bars" onclick="openNav()"></i>
+        </div>
         <div class="header-top">
             <div class="header-top-container">
                 <div class="store-info-container">
@@ -361,5 +378,6 @@
         </div>
     </footer>
     <!--End of Footer-->
+    <script src="js/script.js"></script>
 </body>
 </html>

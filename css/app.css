@@ -393,6 +393,59 @@ ul {
   background-color: #E4E7ED;
 }
 
+#mobile {
+  display: none;
+}
+@media (max-width: 425px) {
+  #mobile {
+    display: block;
+  }
+}
+@media (min-width: 426px) and (max-width: 880px) {
+  #mobile {
+    display: block;
+  }
+}
+#mobile #mobile-toggle {
+  color: #fff;
+}
+#mobile .mobile-menu-overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+#mobile .mobile-menu-overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+#mobile .mobile-menu-overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#mobile .mobile-menu-overlay ahover, #mobile .mobile-menu-overlay afocus {
+  color: #f1f1f1;
+}
+#mobile .mobile-menu-overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 .footer {
   background-color: #15161D;
   padding: 3rem 0;
