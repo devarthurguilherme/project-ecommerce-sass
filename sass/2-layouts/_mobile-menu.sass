@@ -7,12 +7,20 @@
 
     @include base-mixins.mobile
         display: block
+        height: 6rem
+        padding: 2rem
 
     @include base-mixins.tablet
         display: block
+        height: 6rem
+        padding: 2rem
 
     #mobile-toggle
         color: #fff
+        font-size: 2.5rem
+
+        &:hover
+            color: variables.$primary-color
 
     .mobile-menu-overlay
         height: 100%
@@ -33,21 +41,24 @@
             text-align: center
             margin-top: 30px
 
-        a 
-            padding: 8px
-            text-decoration: none
-            font-size: 36px
-            color: #818181
-            display: block
-            transition: 0.3s
+            .mobile-menu-options 
+                padding: 8px
+                text-decoration: none
+                font-size: 36px
+                color: #818181
+                display: block
+                transition: 0.3s
 
+                &:hover
+                    color: variables.$primary-color
 
-
-            &hover, &focus
-                color: #f1f1f1
 
         .closebtn 
             position: absolute
             top: 20px
             right: 45px
             font-size: 60px
+            color: #fff
+
+            &:hover
+                color: variables.$primary-color

@@ -399,15 +399,23 @@ ul {
 @media (max-width: 425px) {
   #mobile {
     display: block;
+    height: 6rem;
+    padding: 2rem;
   }
 }
 @media (min-width: 426px) and (max-width: 880px) {
   #mobile {
     display: block;
+    height: 6rem;
+    padding: 2rem;
   }
 }
 #mobile #mobile-toggle {
   color: #fff;
+  font-size: 2.5rem;
+}
+#mobile #mobile-toggle:hover {
+  color: #d10024;
 }
 #mobile .mobile-menu-overlay {
   height: 100%;
@@ -428,7 +436,7 @@ ul {
   text-align: center;
   margin-top: 30px;
 }
-#mobile .mobile-menu-overlay a {
+#mobile .mobile-menu-overlay-content .mobile-menu-options {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
@@ -436,14 +444,18 @@ ul {
   display: block;
   transition: 0.3s;
 }
-#mobile .mobile-menu-overlay ahover, #mobile .mobile-menu-overlay afocus {
-  color: #f1f1f1;
+#mobile .mobile-menu-overlay-content .mobile-menu-options:hover {
+  color: #d10024;
 }
 #mobile .mobile-menu-overlay .closebtn {
   position: absolute;
   top: 20px;
   right: 45px;
   font-size: 60px;
+  color: #fff;
+}
+#mobile .mobile-menu-overlay .closebtn:hover {
+  color: #d10024;
 }
 
 .footer {
