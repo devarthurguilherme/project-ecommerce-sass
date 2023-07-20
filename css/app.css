@@ -407,7 +407,7 @@ ul {
   #mobile {
     display: block;
     height: 6rem;
-    height-padding: 2rem 0.5rem;
+    padding: 2rem 0.5rem;
   }
 }
 #mobile #mobile-toggle {
